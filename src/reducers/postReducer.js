@@ -1,4 +1,4 @@
-const postReducer =(state= [], action)=>{ // action is data that we have 
+const postReducer =(state= [], action)=>{ // action is data that we have parameter
     switch(action.type){
         case 'ADD_POST':
                         return state.concat([action.data]);

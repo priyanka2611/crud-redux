@@ -8,7 +8,8 @@ class PostForm extends Component {
         const data = {
             id: new Date(),
             title,
-            message
+            message,
+            editing: false
         }
         this.props.dispatch({//passing in the data object with a type of ‘ADD_POST’.
             type: 'ADD_POST',data
